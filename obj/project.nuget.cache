@@ -1,0 +1,18 @@
+{
+  "version": 2,
+  "dgSpecHash": "BHqsAS3zdZ1+lKl8vyZK/qNP9/jtvoWrBX4PIVcgjSoQrVzZ8rsS9TdY/91GgiD7OZyCS+wbDWhWx/EFXjSePQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\xmadi\\source\\repos\\ChannelInfoPlatform\\ChannelInfoPlatform.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\xmadi\\.nuget\\packages\\anglesharp\\1.0.4\\anglesharp.1.0.4.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\google.apis\\1.62.0\\google.apis.1.62.0.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\google.apis.auth\\1.62.0\\google.apis.auth.1.62.0.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\google.apis.core\\1.62.0\\google.apis.core.1.62.0.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\google.apis.youtube.v3\\1.62.0.3169\\google.apis.youtube.v3.1.62.0.3169.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\newtonsoft.json\\13.0.3\\newtonsoft.json.13.0.3.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\6.0.0\\system.runtime.compilerservices.unsafe.6.0.0.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\system.text.encoding.codepages\\6.0.0\\system.text.encoding.codepages.6.0.0.nupkg.sha512",
+    "C:\\Users\\xmadi\\.nuget\\packages\\youtubeexplode\\6.3.5\\youtubeexplode.6.3.5.nupkg.sha512"
+  ],
+  "logs": []
+}

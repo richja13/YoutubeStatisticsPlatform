@@ -1,0 +1,43 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net6.0-windows</TargetFramework>
+    <Nullable>enable</Nullable>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Images\battleofh.png" />
+    <None Remove="Images\miniaturaCharlesV2.png" />
+    <None Remove="Images\miniaturaNorwegia2.png" />
+    <None Remove="Images\pixelHistoryLogo.png" />
+    <None Remove="Images\pxhLogo.jpg" />
+    <None Remove="Images\stiglerBrown.png" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Images\battleofh.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Fonts\" />
+    <Folder Include="Model\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Google.Apis.YouTube.v3" Version="1.62.0.3169" />
+    <PackageReference Include="YoutubeExplode" Version="6.3.5" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="Images\miniaturaCharlesV2.png" />
+    <Resource Include="Images\miniaturaNorwegia2.png" />
+    <Resource Include="Images\pixelHistoryLogo.png" />
+    <Resource Include="Images\pxhLogo.jpg" />
+    <Resource Include="Images\stiglerBrown.png" />
+  </ItemGroup>
+
+</Project>

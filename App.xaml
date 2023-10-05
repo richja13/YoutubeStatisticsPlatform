@@ -1,0 +1,30 @@
+﻿<Application x:Class="ChannelInfoPlatform.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:ChannelInfoPlatform"
+             xmlns:viewmodel="clr-namespace:ChannelInfoPlatform.ViewModel"
+             xmlns:viewm="clr-namespace:ChannelInfoPlatform.View"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <ResourceDictionary>
+            <ResourceDictionary.MergedDictionaries>
+                <ResourceDictionary Source="Theme/MenuButton.xaml"/>
+                <ResourceDictionary Source="Theme/TextBoxTheme.xaml"/>
+            </ResourceDictionary.MergedDictionaries>
+
+            <DataTemplate DataType="{x:Type viewmodel:HomeViewModel}">
+                <viewm:HomeView/>
+            </DataTemplate>
+
+            <DataTemplate DataType="{x:Type viewmodel:StatisticsViewModel}">
+                <viewm:StatisticsView/>
+            </DataTemplate>
+
+        </ResourceDictionary>
+        
+        
+    </Application.Resources>
+    
+    
+    
+</Application>
