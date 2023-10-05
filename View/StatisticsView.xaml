@@ -9,8 +9,9 @@
              Background="#1b1b1b">
     <Grid>
         <StackPanel x:Name="mediagird" Orientation="Vertical">
-            <TextBlock x:Name="TestBox" FontSize="25" Foreground="white" Text="123"/>
+            <TextBlock TextWrapping="Wrap" x:Name="TestBox" FontSize="25" Foreground="white" Text="Test"/>
             <TextBlock x:Name="TestB" FontSize="25" Foreground="white" Text="123"/>
+            <Image x:Name="Thumbnail"/>
             <WebBrowser x:Name="Web"/>
         </StackPanel>
     </Grid>

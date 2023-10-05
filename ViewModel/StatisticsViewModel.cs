@@ -8,5 +8,6 @@ namespace ChannelInfoPlatform.ViewModel
 {
     class StatisticsViewModel
     {
+
     }
 }

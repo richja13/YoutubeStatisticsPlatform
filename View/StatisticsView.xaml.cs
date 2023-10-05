@@ -31,6 +31,8 @@ namespace ChannelInfoPlatform.View
     /// </summary>
     public partial class StatisticsView : UserControl
     {
+
+
         public StatisticsView()
         {
             InitializeComponent();
@@ -44,9 +46,8 @@ namespace ChannelInfoPlatform.View
 
             // You can specify either the video URL or its ID
             var videoUrl = "https://www.youtube.com/watch?v=SDCx_tbE_0U&ab_channel=PixelHistory";
-            var video = await youtube.Videos.GetAsync(videoUrl);
+           // var video = await youtube.Videos.GetAsync(videoUrl);
 
-            TestBox.Text = "LOGIN TO YOUTUBE";
 
 
             UserCredential credential;
@@ -69,6 +70,52 @@ namespace ChannelInfoPlatform.View
                 HttpClientInitializer = credential,
                 ApplicationName = this.GetType().ToString()
             });
+
+
+            var channelId = "UCnJ4ljO4dJBvOV-of05ZrUw";
+           // var pxhChannel = ;
+           // pxhChannel.Id = channelId;
+           // TestBox.Text = pxhChannel.ToString();
+
+
+            var searchListRequest = youtubeService.Search.List("snippet");
+            //searchListRequest.Q = "Pixel History";
+            searchListRequest.ChannelId = channelId;
+            searchListRequest.MaxResults = 5;
+            
+            var searchListResponse = await searchListRequest.ExecuteAsync();
+
+            List<string> videos = new();
+            List<BitmapImage> Thumbnails = new();
+
+            foreach(var searchResult in searchListResponse.Items)
+            {
+                if(searchResult.Id.Kind == "youtube#videos") 
+                    videos.Add(String.Format("{0}", searchResult.Snippet.Title, searchResult.Id.VideoId));
+                var bitmapImage = new BitmapImage();
+                bitmapImage.BeginInit();
+                bitmapImage.UriSource = new Uri($"https://img.youtube.com/vi/{searchResult.Id.VideoId}/0.jpg");
+                bitmapImage.EndInit();
+                Thumbnails.Add(bitmapImage);
+            }
+
+            if (videos is null) return;
+
+            foreach (var v in videos)
+            {
+               TestBox.Text += v + " ";
+            }
+
+            foreach(var t in Thumbnails)
+            {
+                Image img = new()
+                {
+                    Width = 50,
+                };
+
+                img.Source = t;
+                mediagird.Children.Add(img);
+            }
         }
     }
 }
