@@ -4,15 +4,17 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:ChannelInfoPlatform.View"
+             xmlns:viewmodel="clr-namespace:ChannelInfoPlatform.ViewModel"
+             
              mc:Ignorable="d" 
              d:DesignHeight="450" d:DesignWidth="800"
              Background="#1b1b1b">
     <Grid>
-        <StackPanel x:Name="mediagird" Orientation="Vertical">
-            <TextBlock TextWrapping="Wrap" x:Name="TestBox" FontSize="25" Foreground="white" Text="Test"/>
-            <TextBlock x:Name="TestB" FontSize="25" Foreground="white" Text="123"/>
-            <Image x:Name="Thumbnail"/>
-            <WebBrowser x:Name="Web"/>
+        <StackPanel x:Name="mediagird" VerticalAlignment="Center" HorizontalAlignment="Center" Orientation="Vertical">
+            <Image Width="150" Source="{Binding ProfilePicture}"/>
+            <TextBlock TextWrapping="Wrap" FontSize="35" Foreground="white" Text="{Binding Subscriptions}"/>
+            <TextBlock TextWrapping="Wrap" FontSize="35" Foreground="white" Text="{Binding ViewsCount}"/>
+            <Button IsEnabled="{Binding IsLoaded}" Content="Login" Width="200" Height="60" Command="{Binding GetYoutubeStatsCommand}"/>
         </StackPanel>
     </Grid>
 </UserControl>

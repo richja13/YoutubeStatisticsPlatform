@@ -38,3 +38,5 @@ C:\Users\xmadi\source\repos\ChannelInfoPlatform\bin\Debug\net6.0-windows\Google.
 C:\Users\xmadi\source\repos\ChannelInfoPlatform\bin\Debug\net6.0-windows\Google.Apis.Core.dll
 C:\Users\xmadi\source\repos\ChannelInfoPlatform\bin\Debug\net6.0-windows\Google.Apis.YouTube.v3.dll
 C:\Users\xmadi\source\repos\ChannelInfoPlatform\bin\Debug\net6.0-windows\Newtonsoft.Json.dll
+C:\Users\xmadi\source\repos\ChannelInfoPlatform\obj\Debug\net6.0-windows\View\VideosView.g.cs
+C:\Users\xmadi\source\repos\ChannelInfoPlatform\obj\Debug\net6.0-windows\View\VideosView.baml

@@ -16,9 +16,11 @@ namespace ChannelInfoPlatform.ViewModel
     {
         public RelayCommand HomeViewCommand { get; set; }
         public RelayCommand StatisticsViewCommand { get; set; }
+        public RelayCommand VideosViewCommand { get; set; }
 
         public HomeViewModel HomeVm { get; set; }
         public StatisticsViewModel StatVM { get; set; }
+        public VideosViewModel videosVM { get; set; }
 
         public RelayCommand CloseApplicationCommand { get; set; }
       
@@ -43,6 +45,8 @@ namespace ChannelInfoPlatform.ViewModel
         {
             HomeVm = new();
             StatVM = new();
+            videosVM = new();
+
             CurrentView = HomeVm;
             HomeViewCommand = new RelayCommand(o => 
             {
@@ -52,6 +56,11 @@ namespace ChannelInfoPlatform.ViewModel
             StatisticsViewCommand = new RelayCommand(o =>
             {
                 CurrentView = StatVM;
+            });
+
+            VideosViewCommand = new RelayCommand(o =>
+            {
+                CurrentView = videosVM;
             });
 
             CloseApplicationCommand = new(o =>

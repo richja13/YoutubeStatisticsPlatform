@@ -16,9 +16,15 @@
                 <viewm:HomeView/>
             </DataTemplate>
 
+            <DataTemplate DataType="{x:Type viewmodel:VideosViewModel}">
+                <viewm:VideosView/>
+            </DataTemplate>
+
             <DataTemplate DataType="{x:Type viewmodel:StatisticsViewModel}">
                 <viewm:StatisticsView/>
             </DataTemplate>
+
+           
 
         </ResourceDictionary>
         

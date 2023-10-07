@@ -13,6 +13,9 @@
     <Compile Update="View\StatisticsView.xaml.cs">
       <SubType>Code</SubType>
     </Compile>
+    <Compile Update="View\VideosView.xaml.cs">
+      <SubType>Code</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <Page Update="Theme\MenuButton.xaml">
@@ -28,6 +31,9 @@
       <SubType>Designer</SubType>
     </Page>
     <Page Update="View\StatisticsView.xaml">
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Update="View\VideosView.xaml">
       <SubType>Designer</SubType>
     </Page>
   </ItemGroup>
